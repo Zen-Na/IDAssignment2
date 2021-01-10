@@ -5,34 +5,34 @@ document.getElementById("img").style.display = "none";
 
 
 submit.addEventListener("click", function() {
-clearImage()
-let search = document.getElementById("srch");
+  clearImage()
+  let search = document.getElementById("srch");
 
-// Image of Pokemon
-let url2 = "https://pokeapi.co/api/v2/pokemon/" + search.value;
-fetch(url2)
-.then(response => response.json())
-.then(function(res){
-  
-  // show image
-  document.getElementById("img").style.display = "inline";
-  document.getElementById("img").src = res.sprites.front_default;
-  document.getElementById("imgshiny").src = res.sprites.front_shiny;
+  // Image of Pokemon
+  let url2 = "https://pokeapi.co/api/v2/pokemon/" + search.value;
+  fetch(url2)
+  .then(response => response.json())
+  .then(function(res){
+    
+    // show image
+    document.getElementById("img").style.display = "inline";
+    document.getElementById("img").src = res.sprites.front_default;
+    document.getElementById("imgshiny").src = res.sprites.front_shiny;
 
-  // Check if female sprites available
-  if(res.sprites.front_female == null){
-    document.getElementById("imgfemale").src = "https://www.flaticon.com/svg/static/icons/svg/390/390914.svg";
-  }
-  else {
-    document.getElementById("imgfemale").src = res.sprites.front_female;
-  }
+    // Check if female sprites available
+    if(res.sprites.front_female == null){
+      document.getElementById("imgfemale").src = "https://www.flaticon.com/svg/static/icons/svg/390/390914.svg";
+    }
+    else {
+      document.getElementById("imgfemale").src = res.sprites.front_female;
+    }
 
-  if(res.sprites.front_female == null){
-    document.getElementById("imgfemaleshiny").src = "https://www.flaticon.com/svg/static/icons/svg/390/390914.svg";
-  }
-  else {
-    document.getElementById("imgfemaleshiny").src = res.sprites.front_shiny_female;
-  } 
+    if(res.sprites.front_female == null){
+      document.getElementById("imgfemaleshiny").src = "https://www.flaticon.com/svg/static/icons/svg/390/390914.svg";
+    }
+    else {
+      document.getElementById("imgfemaleshiny").src = res.sprites.front_shiny_female;
+    } 
 })
 .catch(function(error
 ){
