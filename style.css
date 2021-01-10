@@ -4,15 +4,11 @@
          url('../font/munro-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-smooth: never;
-    -webkit-font-smoothing: antialiased;
-
 }
     
 .pokedexcontainer {
     position: absolute;
     width: 100%;
-    z-index: 1;
 }
 
 .imgpokedex {
@@ -21,7 +17,6 @@
     left: 90px;
     width: auto;
     height: 180px;
-    z-index: 2;
 }
 
 #shinybutton {
@@ -34,8 +29,6 @@
   left: 500px;
   height: 32px;
   width: 47px;
-  z-index: 2;
-
 }
 
 #defaultbutton {
@@ -43,14 +36,76 @@
   font-size: 15px;
   font-weight: bold;
   position: absolute;
-    padding-left: 2px;
-    top: 387px;
-    left: 451px;
-    height: 32px;
-    width: 47px;
-    z-index: 2;
+  padding-left: 2px;
+  top: 387px;
+  left: 451px;
+  height: 32px;
+  width: 47px;
 }
+
+#malebtn {
+  font-family: 'munroregular';
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  padding-left: 5px;
+  top: 387px;
+  left: 549px;
+  height: 32px;
+  width: 47px;
+}
+
+#femalebtn {
+  font-family: 'munroregular';
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  padding-left: 2px;
+  top: 387px;
+  left: 597px;
+  height: 32px;
+  width: 48px;
+}
+
 
 #testbutton{
   font-family: 'munroregular';
+}
+
+#srch {
+  font-family: 'munroregular';
+  font-size: 15px;
+  position: absolute;
+  padding-left: 5px;
+  top: 136px;
+  left: 81px;
+  width: 150px;
+}
+
+#submit {
+  font-family: 'munroregular';
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 136px;
+  left: 231px;
+}
+
+#desc {
+  font-family: 'munroregular';
+  font-size: 14px;
+  color: rgb(245, 245, 245);
+  position: absolute;
+  top: 184px;
+  left: 455px;
+  width: 230px;
+}
+
+#name{
+  font-family: 'munroregular';
+  font-size: 20px;
+  color: rgb(245, 245, 245);
+  position: absolute;
+  top: 150px;
+  left: 455px;
 }
