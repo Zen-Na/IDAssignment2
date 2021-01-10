@@ -1,4 +1,6 @@
 let url = "https://pokeapi.co/api/v2/pokemon/ditto"
+document.getElementById("imgfemale").style.display = "none"
+document.getElementById("imgfemaleshiny").style.display = "none"
 
 btn.addEventListener("click", function() {
 fetch(url)
@@ -21,6 +23,22 @@ fetch(url2)
 .then(function(res){
   document.getElementById("img").src = res.sprites.front_default;
   document.getElementById("imgshiny").src = res.sprites.front_shiny;
+
+  // Check if female sprites available
+  if(res.sprites.front_female == null){
+    document.getElementById("imgfemale").src = "https://www.flaticon.com/svg/static/icons/svg/390/390914.svg"
+  }
+  else {
+    document.getElementById("imgfemale").src = res.sprites.front_female;
+  } 
+
+  if(res.sprites.front_female == null){
+    document.getElementById("imgfemaleshiny").src = "https://www.flaticon.com/svg/static/icons/svg/390/390914.svg"
+  }
+  else {
+    document.getElementById("imgfemaleshiny").src = res.sprites.front_shiny_female;
+  } 
+
 })
 .catch(function(error
 ){
@@ -77,3 +95,16 @@ fetch(url4)
 
 });
 
+malebtn.addEventListener("click", function() {
+  document.getElementById("imgfemale").style.display = "none"
+  document.getElementById("imgfemaleshiny").style.display = "none"
+  document.getElementById("img").style.display = "inline"
+  document.getElementById("imgshiny").style.display = "inline"
+});
+
+femalebtn.addEventListener("click", function() {
+  document.getElementById("imgfemale").style.display = "inline"
+  document.getElementById("imgfemaleshiny").style.display = "inline"
+  document.getElementById("img").style.display = "none"
+  document.getElementById("imgshiny").style.display = "none"
+});
