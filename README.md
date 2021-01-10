@@ -32,12 +32,14 @@ Validated with,
 * PokeAPI - https://pokeapi.co/
 ### Icons
 * PokeDex Background - https://www.deviantart.com/phoenixoflight92/art/Pokemon-BW-BW2-Mystery-Gift-screen-background-501643201
-* https://medium.com/@FdMstri/react-graphql-e0c1ca714525
+* PokeDex - https://medium.com/@FdMstri/react-graphql-e0c1ca714525
 * Background - https://www.deviantart.com/iwildblood/art/Pokemon-Background-341795186
 * Title - https://fontmeme.com/pokemon-font/
 ### Guides
 * w3schools 
 * ID slides
+
 ### Certain parts of the website was inspired by
 * https://www.pokemon.com/us/pokedex/
 * Macarius for idea inspiration
+* Simon for helping in codes
