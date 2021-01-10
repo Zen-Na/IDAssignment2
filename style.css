@@ -5,18 +5,26 @@
     font-weight: normal;
     font-style: normal;
 }
-    
+
+body {
+  background-image: url("../image/background.png");
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+}
+
 .pokedexcontainer {
-    position: absolute;
-    width: 100%;
+  position: absolute;
 }
 
 .imgpokedex {
-    position: absolute;
-    top: 153px;
-    left: 90px;
-    width: auto;
-    height: 180px;
+  position: absolute;
+  top: 153px;
+  left: 90px;
+  width: auto;
+  height: 180px;
 }
 
 #shinybutton {
@@ -108,4 +116,40 @@
   position: absolute;
   top: 150px;
   left: 455px;
+}
+
+#height{
+  font-family: 'munroregular';
+  font-size: 15px;
+  color: rgb(245, 245, 245);
+  position: absolute;
+  top: 455px;
+  left: 100px;
+}
+
+#weight{
+  font-family: 'munroregular';
+  font-size: 15px;
+  color: rgb(245, 245, 245);
+  position: absolute;
+  top: 475px;
+  left: 100px;
+}
+
+#type1{
+  font-family: 'munroregular';
+  font-size: 15px;
+  color: rgb(245, 245, 245);
+  position: absolute;
+  top: 468px;
+  left: 460px;
+}
+
+#type2{
+  font-family: 'munroregular';
+  font-size: 15px;
+  color: rgb(245, 245, 245);
+  position: absolute;
+  top: 468px;
+  left: 590px;
 }

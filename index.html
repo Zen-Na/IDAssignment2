@@ -6,42 +6,46 @@
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <button id="btn">Next User!</button>
-    <form>
-    
+  <body>   
+    <header>
+      <div class="align">
+        <img src="../image/title.png"></img>
+      </div>
+    </header>
     <br>
-    
-    </form>
-    <a href="../font/munro-demo.html">Continue</a>
     <br>
-    <div id = "weight">test</div>
-    <div id = "height">test</div>
-    <div id = "type1">test</div>
-    <div id = "type2">test</div>
+    <section>
+      <div class="align">
+        <div class="pokedexcontainer">
+          <img src="../image/pokedex.png"></img>
 
+          <input type="text" id="srch" placeholder="Enter Pokémon Name" name="search">
+          <button type="button" id="submit" >Search</button>
 
-    <div class="pokedexcontainer">
-      <img src="../image/pokedex.png"></img>
+          <!-- image -->
+          <img id="imgshiny" class="imgpokedex" src=""></img>
+          <img id="imgfemale" class="imgpokedex" src=""></img>
+          <img id="imgfemaleshiny"class="imgpokedex" src=""></img>
+          <img id="img" class="imgpokedex" src=""></img>
 
-      <input type="text" id="srch" placeholder="Enter Pokémon Name" name="search">
-      <button type="button" id="submit" >Search</button>
+          <!-- text -->
+          <div id="name"></div>
+          <div id="desc"></div>
+          <div id="weight">Weight: </div>
+          <div id="height">Height: </div>
+          <div id = "type1"></div>
+          <div id = "type2"></div>
+          
+          <!-- button -->
+          <button id="shinybutton" type="button">Shiny</button>
+          <button id="defaultbutton" type="button">Default</button>
+          <button id="malebtn" type="button">Male</button>
+          <button id="femalebtn" type="button">Female</button>
 
-      <img id="imgshiny" class="imgpokedex" src=""></img>
-      <img id="imgfemale" class="imgpokedex" src=""></img>
-      <img id="imgfemaleshiny"class="imgpokedex" src=""></img>
-      <img id="img" class="imgpokedex" src=""></img>
+        </div>
+      </div>
+    </section>
 
-      <div id="name"></div>
-      <div id="desc"></div>
-      
-      <button id="shinybutton" type="button">Shiny</button>
-      <button id="defaultbutton" type="button">Default</button>
-      <button id="malebtn" type="button">Male</button>
-      <button id="femalebtn" type="button">Female</button>
-
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

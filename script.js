@@ -46,18 +46,24 @@ fetch(url3)
 .then(function(res){
 
   // Set weight & height
-  document.getElementById("weight").innerHTML = res.weight / 10 + " kg";
-  document.getElementById("height").innerHTML = res.height / 10 + " m";
+  document.getElementById("weight").innerHTML = "Weight: " + res.weight / 10 + " kg";
+  document.getElementById("height").innerHTML = "Height: " + res.height / 10 + " m";
 
   // Set first type
-  document.getElementById("type1").innerHTML = res.types[0].type.name;
+  var type1 = res.types[0].type.name
+  // Capitalize first letter
+  type1 = type1.charAt(0).toUpperCase() + type1.slice(1);
+  document.getElementById("type1").innerHTML = type1;
   
   // Check if second type null, else set second type (some pokemon only has one type)
   if(res.types[1] == null){
     document.getElementById("type2").innerHTML = "";
   }
   else {
-    document.getElementById("type2").innerHTML = res.types[1].type.name;
+    var type2 = res.types[1].type.name
+    // Capitalize first letter
+    type2 = type2.charAt(0).toUpperCase() + type2.slice(1);
+    document.getElementById("type2").innerHTML = type2;
   }
 
   // Set name
