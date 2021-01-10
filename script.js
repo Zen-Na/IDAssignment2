@@ -15,7 +15,7 @@ submit.addEventListener("click", function() {
 let search = document.getElementById("srch");
 
 // Image of Pokemon
-let url2 = "https://pokeapi.co/api/v2/pokemon-form/" + search.value;
+let url2 = "https://pokeapi.co/api/v2/pokemon/" + search.value;
 fetch(url2)
 .then(response => response.json())
 .then(function(res){
