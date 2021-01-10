@@ -1,6 +1,8 @@
 let url = "https://pokeapi.co/api/v2/pokemon/ditto"
-document.getElementById("imgfemale").style.display = "none"
 document.getElementById("imgfemaleshiny").style.display = "none"
+document.getElementById("imgfemale").style.display = "none"
+document.getElementById("imgshiny").style.display = "none"
+document.getElementById("img").style.display = "none"
 
 btn.addEventListener("click", function() {
 fetch(url)
@@ -21,6 +23,9 @@ let url2 = "https://pokeapi.co/api/v2/pokemon/" + search.value;
 fetch(url2)
 .then(response => response.json())
 .then(function(res){
+  
+  // show image
+  document.getElementById("img").style.display = "inline"
   document.getElementById("img").src = res.sprites.front_default;
   document.getElementById("imgshiny").src = res.sprites.front_shiny;
 
@@ -107,4 +112,31 @@ femalebtn.addEventListener("click", function() {
   document.getElementById("imgfemaleshiny").style.display = "inline"
   document.getElementById("img").style.display = "none"
   document.getElementById("imgshiny").style.display = "none"
+});
+
+// Switch between default and shiny image
+defaultbutton.addEventListener("click", function() {
+  console.log("default btn")
+  if (document.getElementById("imgfemaleshiny").style.display == "inline"){
+    document.getElementById("imgfemale").style.display = "inline"
+    document.getElementById("imgfemaleshiny").style.display = "none"
+  }
+  if (document.getElementById("imgshiny").style.display = "inline"){
+    document.getElementById("img").style.display = "inline"
+    document.getElementById("imgshiny").style.display = "none"
+  }
+});
+
+shinybutton.addEventListener("click", function() {
+  console.log("shiny btn")
+  if (document.getElementById("imgfemale").style.display == "inline"){
+    document.getElementById("imgfemaleshiny").style.display = "inline"
+    document.getElementById("imgfemale").style.display = "none"
+  }
+  if (document.getElementById("img").style.display = "inline"){
+    console.log("shiny change")
+    document.getElementById("imgshiny").style.display = "inline"
+    document.getElementById("img").style.display = "none"
+    
+  }
 });
