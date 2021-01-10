@@ -6,7 +6,7 @@ This website is created so that there is an easy and convenient (nice looking to
 html, css and js within the image to mimic a functioning PokeDex. The target of this website will be those who are interested in finding out how the pokemons look like as a
 sprite image as well as know information about the pokemon.
 
-Adobe XD Wireframe :
+Adobe XD Wireframe : https://xd.adobe.com/view/6e5fc167-90d2-431b-812a-f3ef0d380ebd-3b0c/
 ## Features
 * Sprite Image
 * Shiny Option
